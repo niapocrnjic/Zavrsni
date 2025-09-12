@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmFiltriranje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltriranje.Designer.cs">
+      <DependentUpon>frmFiltriranje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPregledZivotinja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregledZivotinja.Designer.cs">
+      <DependentUpon>frmPregledZivotinja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatistika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatistika.Designer.cs">
+      <DependentUpon>frmStatistika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUdomi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUdomi.Designer.cs">
+      <DependentUpon>frmUdomi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnosZivotinje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>frmUnosZivotinje.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPocetna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,8 +84,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmFiltriranje.resx">
+      <DependentUpon>frmFiltriranje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPocetna.resx">
       <DependentUpon>frmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledZivotinja.resx">
+      <DependentUpon>frmPregledZivotinja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatistika.resx">
+      <DependentUpon>frmStatistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUdomi.resx">
+      <DependentUpon>frmUdomi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnosZivotinje.resx">
+      <DependentUpon>frmUnosZivotinje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
