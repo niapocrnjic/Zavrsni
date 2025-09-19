@@ -16,5 +16,11 @@ namespace Zavrsni
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            comboBox1.Items.Clear();
+            listBox1.Items.Clear();
+        }
     }
 }
