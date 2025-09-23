@@ -15,6 +15,7 @@ namespace Zavrsni
             sw.WriteLine(zapis);
             sw.Close();
         }
+
         public static List<string> Svi()
         {
             List<string> lstStr = new List<string>();

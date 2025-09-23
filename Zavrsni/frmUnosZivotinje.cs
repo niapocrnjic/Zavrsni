@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Zavrsni
 {
-    public partial class Form1 : Form
+    public partial class frmUnosZivotinje : Form
     {
-        public Form1()
+        public frmUnosZivotinje()
         {
             InitializeComponent();
         }
@@ -76,6 +76,11 @@ namespace Zavrsni
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

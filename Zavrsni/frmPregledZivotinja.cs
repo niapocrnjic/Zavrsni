@@ -16,5 +16,15 @@ namespace Zavrsni
         {
             InitializeComponent();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPregledZivotinja_Load(object sender, EventArgs e)
+        {
+            listBox1.DataSource = Admin.Svi();
+        }
     }
 }
