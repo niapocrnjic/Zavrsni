@@ -19,8 +19,18 @@ namespace Zavrsni
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comboBox1.Items.Clear();
-            listBox1.Items.Clear();
+            listBox1.DataSource = null;
+        }
+
+        private void frmFiltriranje_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string vrsta=comboBox1.Text;
+            listBox1.DataSource = Admin.Vrsta(vrsta);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Zavrsni
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void frmPregledZivotinja_Load(object sender, EventArgs e)

@@ -139,6 +139,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmStatistika";
             this.Text = "frmStatistika";
+            this.Load += new System.EventHandler(this.frmStatistika_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

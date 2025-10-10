@@ -16,5 +16,70 @@ namespace Zavrsni
         {
             InitializeComponent();
         }
+
+        private void frmUdomi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string linija = textBox1.Text + "|" + textBox2.Text + "|" + dateTimePicker1.Text;
+            Admin.SpremiUdomitelje(linija);
+            textBox1.Text = " ";
+            textBox2.Text = " ";
+            MessageBox.Show("Uspješno udomljavanje!");
+            lstZiv = Admin.listaSvihZivotinja();
+            textBox3.Text = lstZiv[i].Ime;
+            textBox4.Text = lstZiv[i].Vrsta;
+            textBox6.Text = lstZiv[i].Pasmina;
+            textBox7.Text=lstZiv[i].Dob;
+
+
+
+        }
+
+        List<Zivotinja> lstZiv;
+        int i = 0;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            i--;
+            try
+            {
+                textBox3.Text = lstZiv[i].Ime;
+                textBox4.Text = lstZiv[i].Vrsta;
+                textBox6.Text = lstZiv[i].Pasmina;
+                textBox7.Text = lstZiv[i].Dob;
+            }
+            catch
+            {
+                MessageBox.Show("Nema više životinja");
+                i++;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            i++;
+            try
+            {
+                textBox3.Text = lstZiv[i].Ime;
+                textBox4.Text = lstZiv[i].Vrsta;
+                textBox6.Text = lstZiv[i].Pasmina;
+                textBox7.Text = lstZiv[i].Dob;
+            }
+            catch
+            {
+                MessageBox.Show("Nema više životinja");
+                i--;
+            }
+
+            }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
