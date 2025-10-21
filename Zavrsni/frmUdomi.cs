@@ -19,7 +19,17 @@ namespace Zavrsni
 
         private void frmUdomi_Load(object sender, EventArgs e)
         {
-
+            lstZiv = Admin.listaSvihZivotinja();
+            textBox3.Text = lstZiv[i].Ime;
+            textBox4.Text = lstZiv[i].Vrsta;
+            textBox6.Text = lstZiv[i].Pasmina;
+            textBox7.Text = lstZiv[i].Dob;
+            if (System.IO.File.Exists(lstZiv[i].Slika))
+                pictureBox1.Load( lstZiv[i].Slika);
+            else
+            {
+                pictureBox1.Load("nema.jpg");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,7 +44,12 @@ namespace Zavrsni
             textBox4.Text = lstZiv[i].Vrsta;
             textBox6.Text = lstZiv[i].Pasmina;
             textBox7.Text=lstZiv[i].Dob;
-
+            if (System.IO.File.Exists(lstZiv[i].Slika))
+                pictureBox1.Load(lstZiv[i].Slika);
+            else
+            {
+                pictureBox1.Load("nema.jpg");
+            }
 
 
         }
@@ -51,6 +66,12 @@ namespace Zavrsni
                 textBox4.Text = lstZiv[i].Vrsta;
                 textBox6.Text = lstZiv[i].Pasmina;
                 textBox7.Text = lstZiv[i].Dob;
+                if (System.IO.File.Exists(lstZiv[i].Slika))
+                    pictureBox1.Load(lstZiv[i].Slika);
+                else
+                {
+                    pictureBox1.Load("nema.jpg");
+                }
             }
             catch
             {
@@ -68,6 +89,12 @@ namespace Zavrsni
                 textBox4.Text = lstZiv[i].Vrsta;
                 textBox6.Text = lstZiv[i].Pasmina;
                 textBox7.Text = lstZiv[i].Dob;
+                if (System.IO.File.Exists(lstZiv[i].Slika))
+                    pictureBox1.Load(lstZiv[i].Slika);
+                else
+                {
+                    pictureBox1.Load("nema.jpg");
+                }
             }
             catch
             {

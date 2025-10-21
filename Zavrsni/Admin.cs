@@ -60,7 +60,7 @@ namespace Zavrsni
             while (linija != null)
             {
                 string[] razlomljena = linija.Split('|');
-                Zivotinja z = new Zivotinja(razlomljena[0], razlomljena[1], razlomljena[2], razlomljena[3]);
+                Zivotinja z = new Zivotinja(razlomljena[0], razlomljena[1], razlomljena[2], razlomljena[3], razlomljena[9]);
                 lstZiv.Add(z);
                 linija = sr.ReadLine();
             }

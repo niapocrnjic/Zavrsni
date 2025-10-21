@@ -60,7 +60,7 @@ namespace Zavrsni
                 kastriran="nije kastriran";
             }
 
-            string zapis = textBox1.Text + "|" + textBox2.Text + "|" + textBox3.Text + "|" + spol + "|" + numericUpDown1.Value + "|" + dateTimePicker1.Value + "|"+cijepljen+"|" +kastriran+"|"+textBox4.Text;    
+            string zapis = textBox1.Text + "|" + textBox2.Text + "|" + textBox3.Text + "|" + spol + "|" + numericUpDown1.Value + "|" + dateTimePicker1.Value + "|"+cijepljen+"|" +kastriran+"|"+textBox4.Text+"|"+textBox5.Text;    
             Admin.UnosUdatoteku(zapis);
             MessageBox.Show("Podaci su spremljeni");
             textBox1.Text = "";
@@ -73,6 +73,7 @@ namespace Zavrsni
             checkBox2.Checked = false;
             numericUpDown1.Value = 0;
             dateTimePicker1.Value = DateTime.Now;
+            textBox5.Text = "";
 
         }
 

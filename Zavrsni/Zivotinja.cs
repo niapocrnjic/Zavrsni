@@ -12,12 +12,14 @@ namespace Zavrsni
         public string Vrsta { get; set; }
         public string Pasmina { get; set; }
         public string Dob { get; set; }
-        public Zivotinja(string ime, string vrsta, string pasmina, string dob)
+        public string Slika { get; set; }
+        public Zivotinja(string ime, string vrsta, string pasmina, string dob, string slika)
         {
             Ime = ime;
             Vrsta = vrsta;
             Pasmina = pasmina;
             Dob = dob;
+            Slika = slika;
         }
 
     }

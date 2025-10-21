@@ -30,7 +30,9 @@ namespace Zavrsni
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+           
             string vrsta=comboBox1.Text;
+            listBox1.DataSource= Admin.Vrsta(vrsta);
            
         }
     }
