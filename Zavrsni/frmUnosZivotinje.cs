@@ -13,6 +13,7 @@ namespace Zavrsni
 {
     public partial class frmUnosZivotinje : Form
     {
+        string pictureName="";
         public frmUnosZivotinje()
         {
             InitializeComponent();
@@ -83,6 +84,20 @@ namespace Zavrsni
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog(this) == DialogResult.OK)
+            {
+                string selectedFilePath = openFileDialog1.FileName;
+                string selectedFileName = System.IO.Path.GetFileName(selectedFilePath);
+                pictureName = selectedFileName;
+                string runFolder = Application.StartupPath;
+                string destinationPath = System.IO.Path.Combine(runFolder, selectedFileName);
+                System.IO.File.Copy(selectedFilePath, destinationPath, true);
+                textBox5.Text = selectedFileName;
+            }
         }
     }
 }

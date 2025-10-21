@@ -125,5 +125,22 @@ namespace Zavrsni
              prosjek = suma / br;
             return prosjek;
         }
+        public static int BrojVrste(string vrsta)
+        {
+            int broj = 0;
+            StreamReader sr = new StreamReader("zivotinje.txt");
+            string linija = sr.ReadLine();
+            while (linija != null)
+            {
+                string[] razlomljena = linija.Split('|');
+                if (razlomljena[1] == vrsta)
+                {
+                    broj++;
+                }
+                linija = sr.ReadLine();
+            }
+            sr.Close();
+            return broj;
+        }
     }
 }

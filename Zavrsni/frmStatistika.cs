@@ -45,5 +45,16 @@ namespace Zavrsni
 
 
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string vrsta=comboBox1.Text;
+            textBox2.Text = Admin.BrojVrste(vrsta).ToString();
+        }
     }
 }

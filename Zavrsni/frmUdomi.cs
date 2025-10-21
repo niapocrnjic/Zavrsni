@@ -26,7 +26,7 @@ namespace Zavrsni
         {
             string linija = textBox1.Text + "|" + textBox2.Text + "|" + dateTimePicker1.Text;
             Admin.SpremiUdomitelje(linija);
-            textBox1.Text = " ";
+            textBox1.Text = " "; 
             textBox2.Text = " ";
             MessageBox.Show("Uspješno udomljavanje!");
             lstZiv = Admin.listaSvihZivotinja();
