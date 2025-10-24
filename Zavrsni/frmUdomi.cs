@@ -108,5 +108,10 @@ namespace Zavrsni
         {
 
         }
+
+        private void Izlaz_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

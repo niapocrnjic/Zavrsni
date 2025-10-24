@@ -19,7 +19,7 @@ namespace Zavrsni
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string linija = listBox1.SelectedItem.ToString();
+            string linija = listBox1.SelectedItem as string;
             if (linija != null)
             {
                 
@@ -29,7 +29,7 @@ namespace Zavrsni
                         string putanjaSlike = dijelovi[9].Trim();
                         if (System.IO.File.Exists(putanjaSlike))
                         {
-                            pictureBox1.Load(putanjaSlike);
+                            pictureBox1.Image=Image.FromFile(putanjaSlike);
                         }
                         else
                         {
@@ -57,6 +57,11 @@ namespace Zavrsni
            
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
        

@@ -100,5 +100,10 @@ namespace Zavrsni
                 textBox5.Text = selectedFileName;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

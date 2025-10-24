@@ -56,5 +56,10 @@ namespace Zavrsni
             string vrsta=comboBox1.Text;
             textBox2.Text = Admin.BrojVrste(vrsta).ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

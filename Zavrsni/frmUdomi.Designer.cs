@@ -47,6 +47,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Izlaz = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,8 +208,19 @@
             this.pictureBox1.Location = new System.Drawing.Point(22, 104);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(219, 236);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
+            // 
+            // Izlaz
+            // 
+            this.Izlaz.Location = new System.Drawing.Point(693, 395);
+            this.Izlaz.Name = "Izlaz";
+            this.Izlaz.Size = new System.Drawing.Size(75, 23);
+            this.Izlaz.TabIndex = 21;
+            this.Izlaz.Text = "Izlaz";
+            this.Izlaz.UseVisualStyleBackColor = true;
+            this.Izlaz.Click += new System.EventHandler(this.Izlaz_Click);
             // 
             // frmUdomi
             // 
@@ -216,6 +228,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Izlaz);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -265,5 +278,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Izlaz;
     }
 }
